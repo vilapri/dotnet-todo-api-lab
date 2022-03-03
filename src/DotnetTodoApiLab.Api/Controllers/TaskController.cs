@@ -44,9 +44,6 @@ namespace DotnetTodoApiLab.Api.Controllers
         {
             var task = await _taskService.CreateTaskAsync(taskDTO);
             return CreatedAtAction(nameof(Create), task);
-
-            //var newHero = await _heroService.CreateHero(dto);
-            //return CreatedAtAction(nameof(GetHeroById), new { id = newHero.Id }, newHero);
         }
 
 
