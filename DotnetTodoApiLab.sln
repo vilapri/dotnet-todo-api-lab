@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9485D4F4-9E94-4058-A11B-40BD0511E99D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C7816907-144D-4EB4-B645-3E7E03BD4835}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{6965B827-25B1-4990-9654-6061FD7F1DC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{8FB31CA6-BF37-45DA-B09C-24DE15037E0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0EBA756A-3E01-49F4-A192-C8B805685C21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{346415FF-9233-459C-AE00-06ACFE985BC1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetTodoApiLab.Api", "src\DotnetTodoApiLab.Api\DotnetTodoApiLab.Api.csproj", "{FAE0A119-1685-41FC-B7A0-BF44BD126403}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetTodoApiLab.Infrastructure", "src\DotnetTodoApiLab.Infrastructure\DotnetTodoApiLab.Infrastructure.csproj", "{244D6466-DFC1-4653-B526-24E8333F2852}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetTodoApiLab.Domain", "src\DotnetTodoApiLab.Domain\DotnetTodoApiLab.Domain.csproj", "{66812A3B-A3AC-4DAC-9343-B781DEE6D1F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetTodoApiLab.Domain.Core", "src\DotnetTodoApiLab.Domain.Core\DotnetTodoApiLab.Domain.Core.csproj", "{6F1E86B2-987B-44C6-B880-57D5EDE0755F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetTodoApiLab.Application", "src\DotnetTodoApiLab.Application\DotnetTodoApiLab.Application.csproj", "{B91BC2CB-4781-4ED6-ACF4-305CCE7051D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAE0A119-1685-41FC-B7A0-BF44BD126403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAE0A119-1685-41FC-B7A0-BF44BD126403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAE0A119-1685-41FC-B7A0-BF44BD126403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAE0A119-1685-41FC-B7A0-BF44BD126403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{244D6466-DFC1-4653-B526-24E8333F2852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{244D6466-DFC1-4653-B526-24E8333F2852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{244D6466-DFC1-4653-B526-24E8333F2852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{244D6466-DFC1-4653-B526-24E8333F2852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66812A3B-A3AC-4DAC-9343-B781DEE6D1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66812A3B-A3AC-4DAC-9343-B781DEE6D1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66812A3B-A3AC-4DAC-9343-B781DEE6D1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66812A3B-A3AC-4DAC-9343-B781DEE6D1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1E86B2-987B-44C6-B880-57D5EDE0755F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1E86B2-987B-44C6-B880-57D5EDE0755F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1E86B2-987B-44C6-B880-57D5EDE0755F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1E86B2-987B-44C6-B880-57D5EDE0755F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91BC2CB-4781-4ED6-ACF4-305CCE7051D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91BC2CB-4781-4ED6-ACF4-305CCE7051D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91BC2CB-4781-4ED6-ACF4-305CCE7051D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91BC2CB-4781-4ED6-ACF4-305CCE7051D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7816907-144D-4EB4-B645-3E7E03BD4835} = {9485D4F4-9E94-4058-A11B-40BD0511E99D}
+		{6965B827-25B1-4990-9654-6061FD7F1DC0} = {9485D4F4-9E94-4058-A11B-40BD0511E99D}
+		{8FB31CA6-BF37-45DA-B09C-24DE15037E0C} = {9485D4F4-9E94-4058-A11B-40BD0511E99D}
+		{0EBA756A-3E01-49F4-A192-C8B805685C21} = {9485D4F4-9E94-4058-A11B-40BD0511E99D}
+		{FAE0A119-1685-41FC-B7A0-BF44BD126403} = {C7816907-144D-4EB4-B645-3E7E03BD4835}
+		{244D6466-DFC1-4653-B526-24E8333F2852} = {0EBA756A-3E01-49F4-A192-C8B805685C21}
+		{66812A3B-A3AC-4DAC-9343-B781DEE6D1F5} = {8FB31CA6-BF37-45DA-B09C-24DE15037E0C}
+		{6F1E86B2-987B-44C6-B880-57D5EDE0755F} = {8FB31CA6-BF37-45DA-B09C-24DE15037E0C}
+		{B91BC2CB-4781-4ED6-ACF4-305CCE7051D7} = {6965B827-25B1-4990-9654-6061FD7F1DC0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {541B563F-712B-4BF0-851D-756E0B417E4C}
+	EndGlobalSection
+EndGlobal
