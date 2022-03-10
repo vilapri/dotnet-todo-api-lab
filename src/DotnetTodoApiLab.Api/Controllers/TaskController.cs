@@ -20,10 +20,12 @@ namespace DotnetTodoApiLab.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IList<TaskDTO>>> GetTasks()
+        [ProducesResponseType(typeof(IList<TaskDTO>), StatusCodes.Status200OK)]
+        public ActionResult<IList<TaskDTO>> GetTasks()
         {
-            // TODO IN LAB
-            throw new NotImplementedException();
+            var taskList = _taskService.GetTaskList();
+
+            return Ok(taskList);
         }
 
 
@@ -50,19 +52,22 @@ namespace DotnetTodoApiLab.Api.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult<TaskDTO>> Update(Guid id, [FromBody] TaskDTO taskDTO)
         {
-            // TODO IN LAB
-            throw new NotImplementedException();
+            var task = await _taskService.UpdateTaskAsync(id, taskDTO);
+            return Ok(task);
         }
 
 
         [HttpDelete]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [Route("{id}")]
         public async Task<ActionResult> Delete(Guid id)
         {
-            // TODO IN LAB
-            throw new NotImplementedException();
+            bool result = await _taskService.DeleteTaskAsync(id);
+            if (result == true){
+                return Ok();
+            }
+            return BadRequest();
         }
 
     }
