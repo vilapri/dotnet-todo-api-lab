@@ -24,3 +24,5 @@ This is just a simplified API example to get a first glance at dotnet. Do not us
 
 # About
 Boilerplate/template was developed by Yan Pitangui under [MIT license](LICENSE).
+
+hoHoHo
